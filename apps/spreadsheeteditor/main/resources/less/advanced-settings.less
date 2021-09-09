@@ -19,7 +19,6 @@
                 background-position: @arrow-small-offset-x @arrow-small-offset-y;
             }
         }
-
     }
 }
 
@@ -78,13 +77,8 @@
             display: inline-block;
             cursor: pointer;
         }
-        .sort-direction {
-            &.caret {
-                background-position: @arrow-small-offset-x @arrow-small-offset-y;
-                &.sort-desc {
-                    transform: rotate(45deg);
-                }
-            }
+        .sort-desc {
+                transform: rotate(45deg);
         }
     }
 }
