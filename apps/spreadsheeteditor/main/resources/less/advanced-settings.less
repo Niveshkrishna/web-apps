@@ -77,8 +77,21 @@
             display: inline-block;
             cursor: pointer;
         }
-        .sort-desc {
+        .caret {
+            width: 4px;
+            height: 4px;
+            border: solid 1px @icon-normal-ie;
+            border: solid 1px @icon-normal;
+            border-bottom: none;
+            border-right: none;
+            background-image: none;
+
+            transition: transform 0.2s ease;
+            transform: rotate(-135deg) translate(1px,1px);
+
+            &.sort-desc {
                 transform: rotate(45deg);
+            }
         }
     }
 }
